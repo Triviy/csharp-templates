@@ -7,11 +7,11 @@
 - What are main features?
 
 ## What is out of scope?
-- CDW related implementation
-- Package dependencies related to CDW
+- CN related implementation
+- Package dependencies related CN
 - Folder structure
 
-It's just a demo of base functionality that will evolve to final version of CDW templates.
+It's just a demo of base functionality that will evolve to final version of CN templates.
 
 ## dotnet new
 - What is "dotnet new"? 
