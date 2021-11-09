@@ -1,16 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+#if (UseMongoDB)
+using MongoDB.Driver;
+#endif
 
 namespace CompanyName.SystemAPI.TemplateName.API
 {
@@ -32,6 +28,9 @@ namespace CompanyName.SystemAPI.TemplateName.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CompanyName.SystemAPI.TemplateName.API", Version = "v1" });
             });
+#if (UseMongoDB)
+            services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("MongoDBConnectionString")));
+#endif
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
