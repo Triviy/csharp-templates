@@ -26,37 +26,34 @@
       "replaces": "net5.0",
       "defaultValue": "net5.0"
     },
-    "AuthorName": {
+    "DB": {
       "type": "parameter",
-      "defaultValue": "(insert author name)",
-      "replaces": "AuthorName",
-      "datatype": "text",
-      "description": "Author name"
+      "description": "Database engine that solution will be connected to.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "SQLServer",
+          "description": "Target net5.0"
+        },
+        {
+          "choice": "MongoDB",
+          "description": "Target net5.0"
+        }
+      ],
+      //"replaces": "SQLServer",
+      "defaultValue": "SQLServer"
     },
-    "SiteTitle": {
-      "type": "parameter",
-      "description": "Title that will be shown in the browser tab",
-      "defaultValue": "(insert title)",
-      "replaces": "SiteTitle"
+    "UseMongoDB": {
+      "type": "computed",
+      "value": "(DB == \"MongoDB\")"
     },
-    "HttpPort": {
-      "type": "parameter",
-      "datatype": "integer",
-      "description": "Port number to use for the HTTP endpoint in launchSettings.json."
-    },
-    "HttpPortGenerated": {
-      "type": "generated",
-      "generator": "port"
-    },
-    "HttpPortReplacer": {
-      "type": "generated",
-      "generator": "coalesce",
-      "parameters": {
-        "sourceVariableName": "HttpPort",
-        "fallbackVariableName": "HttpPortGenerated"
-      },
-      "replaces": "57493"
-    },
+    //"AuthorName": {
+    //  "type": "parameter",
+    //  "defaultValue": "(insert author name)",
+    //  "replaces": "AuthorName",
+    //  "datatype": "text",
+    //  "description": "Author name"
+    //},
     "HttpsPort": {
       "type": "parameter",
       "datatype": "integer",
@@ -77,7 +74,7 @@
         "sourceVariableName": "HttpsPort",
         "fallbackVariableName": "HttpsPortGenerated"
       },
-      "replaces": "44345"
+      "replaces": "44321"
     }
   }
 }
