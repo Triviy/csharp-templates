@@ -1,24 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.SystemAPI.TemplateName.API", "CompanyName.SystemAPI.TemplateName.API\CompanyName.SystemAPI.TemplateName.API.csproj", "{473AD5FF-06CE-40EC-9837-6C598BE6B010}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.SystemAPI.TemplateName.Facade", "CompanyName.SystemAPI.TemplateName.Facade\CompanyName.SystemAPI.TemplateName.Facade.csproj", "{1BC8A216-00F1-4872-8D04-4757AAF88436}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{2B82DB50-2BDF-407D-8257-9597790C817D}"
-	ProjectSection(SolutionItems) = preProject
-		.template.config\icon.png = .template.config\icon.png
-		.template.config\ide.host.json = .template.config\ide.host.json
-		.template.config\template.json = .template.config\template.json
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{22048910-365F-43FC-96FB-E938A0DBE6BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.SystemAPI.TemplateName.Facade.Tests", "CompanyName.SystemAPI.TemplateName.Facade.Tests\CompanyName.SystemAPI.TemplateName.Facade.Tests.csproj", "{D7AF9BBA-BBEE-4A54-8C1E-342172A6AAF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.SystemAPI.TemplateName.Facade.Tests", "CompanyName.SystemAPI.TemplateName.Facade.Tests\CompanyName.SystemAPI.TemplateName.Facade.Tests.csproj", "{D7AF9BBA-BBEE-4A54-8C1E-342172A6AAF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.SystemAPI.TemplateName.API.Tests", "CompanyName.SystemAPI.TemplateName.API.Tests\CompanyName.SystemAPI.TemplateName.API.Tests.csproj", "{0350B691-FDFA-44C2-9F8F-BF46D82B3B36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.SystemAPI.TemplateName.API.Tests", "CompanyName.SystemAPI.TemplateName.API.Tests\CompanyName.SystemAPI.TemplateName.API.Tests.csproj", "{0350B691-FDFA-44C2-9F8F-BF46D82B3B36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
