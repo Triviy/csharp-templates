@@ -75,8 +75,10 @@ dotnet new cnpresentationapi -o ../CN/CN.PresentationAPI.Search -n Search
 
 ### Via Visual Studio 2022
 
+### Via Visual Studio for Mac
+
 ## VSIX
-TODO
+Can be packed to VSIX
 
 ## Materials
 Create .NET Core Projects with the Command Line (https://www.youtube.com/watch?v=rZFIbbxsGmc&t=0s published 12/10)
