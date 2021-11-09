@@ -1,12 +1,12 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "CompanyName",
-  "classifications": [ "CompanyName", "System.API", "WebAPI" ],
-  "name": "CompanyName.System.API",
-  "shortName": "cnsystemapi",
+  "classifications": [ "CompanyName", "Presentation.API", "WebAPI" ],
+  "name": "CompanyName.Presentation.API",
+  "shortName": "cnpresentationapi",
   "sourceName": "TemplateName",
   "defaultName": "NewTemplate",
-  "identity": "CompanyName.System.API.CSharp",
+  "identity": "CompanyName.Presentation.API.CSharp",
   "tags": {
     "language": "C#",
     "type": "solution"
@@ -29,26 +29,6 @@
       ],
       "replaces": "net6.0",
       "defaultValue": "net6.0"
-    },
-    "DB": {
-     "type": "parameter",
-     "description": "Database engine that solution will be connected to.",
-     "datatype": "choice",
-     "choices": [
-       {
-         "choice": "SQLServer",
-         "description": "Target net5.0"
-       },
-       {
-         "choice": "MongoDB",
-         "description": "Target net5.0"
-       }
-     ],
-     "defaultValue": "SQLServer"
-    },
-    "UseMongoDB": {
-     "type": "computed",
-     "value": "(DB == \"MongoDB\")"
     }
   }
 }
